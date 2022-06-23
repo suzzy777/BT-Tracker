@@ -15,6 +15,7 @@ from ..event import status
 
 class TestEvent(object):
     def test_object(self):
+        status.state = False
         assert id(status.state) == id(status.state)
 
     def test_state_change(self):
